@@ -1,0 +1,24 @@
+import csv
+def create_sample_data(filepath="movies.csv"):
+    movies = [
+        ["title",            "genre",     "year", "rating", "watched"],
+        ["The Dark Knight",  "Action",    2008,    9.5,     "yes"],
+        ["Interstellar",     "Sci-Fi",    2014,    9.0,     "yes"],
+        ["Parasite",         "Drama",     2019,    9.3,     "yes"],
+        ["Frozen",           "Animation", 2013,    8.0,     "yes"],
+        ["Inception",        "Sci-Fi",    2010,    8.8,     "yes"],
+        ["The Notebook",     "Drama",     2004,    7.5,     "no"],
+        ["Dune",             "Sci-Fi",    2021,    8.5,     "no"],
+        ["Toy Story",        "Animation", 1995,    8.3,     "yes"],
+        ["Home Alone",       "Comedy",    1990,    7.8,     "yes"],
+        ["The Proposal",     "Comedy",    2009,    6.9,     "no"],
+        ["Avengers Endgame", "Action",    2019,    8.4,     "yes"],
+        ["Titanic",          "Drama",     1997,    7.9,     "yes"],
+    ]
+    with open(filepath, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerows(movies)
+    print(f"Sample data created: {filepath} ({len(movies)-1} movies)")
+
+if __name__ == "__main__":
+    create_sample_data()
