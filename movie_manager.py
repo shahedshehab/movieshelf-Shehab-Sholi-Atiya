@@ -28,7 +28,7 @@ class MovieManager():
         return movies
     
     def get_watched(self, movies: list)-> list:
-        pass
+        return [m for m in movies if m["watched"]=="yes"]
 
 #just for pre testing
 # m=MovieManager()
