@@ -32,29 +32,29 @@ counts genres, and summarizes watched versus unwatched movies. The most importan
 # 5: Test Cases
 2. Test: average_rating()
 
-Input: Ratings = 9.5, 8.0, 7.0
-Expected Output: 8.17
-Actual Output: 8.17 (exact)
-sa = StatsAnalyzer()
+Input: Ratings = 9.5, 8.0, 7.0 |
+Expected Output: 8.17 |
+Actual Output: 8.17 (True) |
+sa = StatsAnalyzer() |
 
 movies = [
     {"rating": 9.5},
     {"rating": 8.0},
     {"rating": 7.0}
-]
+] |
 print(sa.average_rating(movies))
 
 
 3. Test: genre_counts()
 
-Input: Action, Action, Drama, Comedy
+Input: Action, Action, Drama, Comedy |
 Expected Output:
 {
     "Action": 2,
     "Drama": 1,
     "Comedy": 1
-}
-Actual Output: Correct counts returned 
+} | 
+Actual Output: Correct counts returned  |
 print(sa.genre_counts(movies))
 
 
@@ -79,10 +79,10 @@ The solution is to first test the length of the list and then perform the calcul
 
 # 9: How to Run
 Install Dependencies
-pip install -r requirements.txt
+(pip install -r requirements.txt)
 
 Create Sample Data
-python create_sample_data.py
+(python create_sample_data.py)
 
 Run the Application
-python main.py
+(python main.py)
