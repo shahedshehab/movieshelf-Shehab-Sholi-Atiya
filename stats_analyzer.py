@@ -49,5 +49,17 @@ class StatsAnalyzer:
          "unwatched": unwatched,
          "watched_%": round(watched / len(movies) * 100, 1 )
         }
-    
+     
+ #test the code :
 
+sa = StatsAnalyzer()
+
+movies = [
+    {"title": "Movie1", "rating": 9.5, "genre": "Action", "watched": "yes"},
+    {"title": "Movie2", "rating": 8.0, "genre": "Drama", "watched": "no"},
+    {"title": "Movie3", "rating": 7.0, "genre": "Action", "watched": "yes"}
+]
+
+print(sa.average_rating(movies))
+print(sa.genre_counts(movies))
+print(sa.watched_summary(movies))
