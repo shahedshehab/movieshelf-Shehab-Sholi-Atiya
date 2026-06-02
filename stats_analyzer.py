@@ -30,7 +30,7 @@ class StatsAnalyzer:
 
       return counts
         
-# 4. define watched_summery method to clarifies numbers of movies ,watched and unwatched movies
+# 4. define watched_summary method to clarifies numbers of movies ,watched and unwatched movies
     
     def watched_summary(self, movies):
         if not movies:
@@ -61,5 +61,6 @@ movies = [
 ]
 
 print(sa.average_rating(movies))
+print(sa.top_rated(movies))
 print(sa.genre_counts(movies))
 print(sa.watched_summary(movies))
