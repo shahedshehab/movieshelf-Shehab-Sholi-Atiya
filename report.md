@@ -12,10 +12,10 @@
 MovieShelf is a Python application designed to manage a personal movie watchlist. The application loads movie data from a CSV file, analyzes the data using Python statistics, and visualizes the results through charts created with Matplotlib. It also generates a JSON report containing useful information about the movie collection. The project demonstrates the use of file handling, object-oriented programming, data analysis, and data visualization in Python.
 
 # 3: Library used
-Library      |     	Version	      |     How it was used
-matplotlib	        3.10.6              Creating histogram, pie chart, and bar chart
-csv               	Built-in	          Reading and writing movie data
-json	              Built-in	          Saving analysis results into JSON report
+# Library      |     	Version	      |     How it was used
+# matplotlib	        3.10.6              Creating histogram, pie chart, and bar chart
+# csv               	Built-in	          Reading and writing movie data
+# json	              Built-in	          Saving analysis results into JSON report
 
 
 # 4: Module Descriptions
