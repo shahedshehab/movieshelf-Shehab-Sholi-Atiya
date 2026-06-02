@@ -78,3 +78,11 @@ The problem was to calculate statistics for special cases, such as movies that h
 The solution is to first test the length of the list and then perform the calculation.
 
 # 9: How to Run
+Install Dependencies
+pip install -r requirements.txt
+
+Create Sample Data
+python create_sample_data.py
+
+Run the Application
+python main.py
