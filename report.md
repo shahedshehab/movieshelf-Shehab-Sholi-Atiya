@@ -54,7 +54,7 @@ Expected Output:
     "Drama": 1,
     "Comedy": 1
 }
-Actual Output: Correct counts returned ✅
+Actual Output: Correct counts returned 
 print(sa.genre_counts(movies))
 
 
