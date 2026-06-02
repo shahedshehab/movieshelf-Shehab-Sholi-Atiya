@@ -31,32 +31,23 @@ counts genres, and summarizes watched versus unwatched movies. The most importan
 
 # 5: Test Cases
 2. Test: average_rating()
+   Expected Output: 8.17 |
+   Actual Output: 8.17 (True) 
 
-Input: Ratings = 9.5, 8.0, 7.0 |
-Expected Output: 8.17 |
-Actual Output: 8.17 (True) |
-sa = StatsAnalyzer() |
-
-movies = [
-    {"rating": 9.5},
-    {"rating": 8.0},
-    {"rating": 7.0}
-] |
-print(sa.average_rating(movies))
-
+4. Test: Top_rated(
+   Expected output:
+  [{'title': 'Movie1', 'rating': 9.5, 'genre': 'Action', 'watched': 'yes'},
+   {'title': 'Movie2', 'rating': 8.0, 'genre': 'Drama', 'watched': 'no'},
+   {'title': 'Movie3', 'rating': 7.0, 'genre': 'Action', 'watched': 'yes'}]  |
+       Actual Output:Correctly sorted
 
 3. Test: genre_counts()
+   Expected Output: {'Action': 2, 'Drama': 1}  |
+      Actual Output: {'Action': 2, 'Drama': 1} ✅ 
 
-Input: Action, Action, Drama, Comedy |
-Expected Output:
-{
-    "Action": 2,
-    "Drama": 1,
-    "Comedy": 1
-} | 
-Actual Output: Correct counts returned  |
-print(sa.genre_counts(movies))
-
+4. Test: watched_summary()
+  Expected Output: {'total': 3, 'watched': 2, 'unwatched': 1, 'watched_%': 66.7}  |
+    Actual Output: Correct output ✅
 
 # 5: Screenshots
 
