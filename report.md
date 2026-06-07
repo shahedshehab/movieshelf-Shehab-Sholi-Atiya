@@ -56,7 +56,7 @@ counts genres, and summarizes watched versus unwatched movies. The most importan
 | Student | ID | Files | Commit Count | GitHub Username |
 |---|---|---|---|---|
 | Shahed Shehab | 202211666 | movie_manager.py, create_sample_data.py | 5 | @shahedshehab |
-| Reem Sholi    | 202211538 | stats_analyzer.py, requirements.txt     | 8 | @reemsholi|
+| Reem Sholi    | 202211538 | stats_analyzer.py, requirements.txt     | 18 | @reemsholi|
 | Aseel Atiya   | 202212011 | visualizer.py, main.py                  | ? | @username |
 
 
