@@ -43,11 +43,11 @@ counts genres, and summarizes watched versus unwatched movies. The most importan
 
 3. Test: genre_counts()
    Expected Output: {'Action': 2, 'Drama': 1}  |
-      Actual Output: {'Action': 2, 'Drama': 1} ✅ 
+      Actual Output: {'Action': 2, 'Drama': 1} 
 
 4. Test: watched_summary()
   Expected Output: {'total': 3, 'watched': 2, 'unwatched': 1, 'watched_%': 66.7}  |
-    Actual Output: Correct output ✅
+    Actual Output: Correct output 
 
 # 5: Screenshots
 
