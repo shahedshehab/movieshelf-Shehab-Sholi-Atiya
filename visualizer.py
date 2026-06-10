@@ -22,6 +22,24 @@ class Visualizer:
         ax.pie(sizes,labels=labels,autopct="%1.1f%%",startangle=140)
         ax.set_title("Movies by Genre")
         plt.show()
+        
+    def top_movies_bar(self,top_movies:list):
+        titles=[m["title"]for m in top_movies]
+        ratings=[m["rating"]for m in top_movies]
+        titles=titles[::-1]
+        ratings=ratings[::-1]
+        fig,ax=plt.subplots(figsize=(10,5))
+        ax.barh(titles,ratings,color="goldenrod",edgecolor="black")
+        for i,r in enumerate(ratings):
+            ax.text(r + 0.05, i, f"{r}",va="center",fontsize=10)
+        ax.set_xlim(0,11)
+        ax.set_xlabel("Rating")
+        ax.set_ylabel("Movie")
+        ax.set_title("Top Rated Movies")
+        plt.tight_layout()
+        plt.show()
+            
+            
 
     
     
