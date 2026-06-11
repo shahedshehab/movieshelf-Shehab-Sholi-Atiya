@@ -34,6 +34,23 @@ counts genres, and summarizes watched versus unwatched movies. The most importan
    Expected Output: 8.17 |
    Actual Output: 8.17 (True) 
 
+1. Test: load_movies() — correct number of movies and data types
+#Input: movies.csv file with 12 movies
+#Expected Output: list of 12 dicts, year as int, rating as float
+#Actual Output: 12 movies loaded correctly 
+#Code snippet used to verify:
+​```python
+m = MovieManager()
+movies = m.load_movies("movies.csv")
+print(len(movies))                  # expected: 12
+print(type(movies[0]["year"]))      # expected: int
+print(type(movies[0]["rating"]))    # expected: float
+​```
+
+2. Test: average_rating()
+   Expected Output: 8.17 |
+   Actual Output: 8.17 (True) 
+
 4. Test: Top_rated(
    Expected output:
   [{'title': 'Movie1', 'rating': 9.5, 'genre': 'Action', 'watched': 'yes'},
@@ -61,7 +78,7 @@ counts genres, and summarizes watched versus unwatched movies. The most importan
 
 
 # 8:  Challenges & What You Learned
-Shahed Shehab (202211666): the main challenge was working with dictionaries in general -_- 
+Shahed Shehab (202211666): the main challenge was working with dictionaries in general
 solve by restudying dict  but I still feel I need more practice.
 
 Reem Sholi (202211538):
