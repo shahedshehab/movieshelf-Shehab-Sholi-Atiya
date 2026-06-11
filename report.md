@@ -30,6 +30,9 @@ counts genres, and summarizes watched versus unwatched movies. The most importan
 
 
 # 5: Test Cases
+2. Test: average_rating()
+   Expected Output: 8.17 |
+   Actual Output: 8.17 (True) 
 
 1. Test: load_movies() — correct number of movies and data types
 #Input: movies.csv file with 12 movies
