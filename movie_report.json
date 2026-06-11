@@ -1,0 +1,54 @@
+{
+  "total_movies": 12,
+  "average_rating": 8.33,
+  "watched_summary": {
+    "total": 12,
+    "watched": 9,
+    "unwatched": 3,
+    "watched_%": 75.0
+  },
+  "genre_counts": {
+    "Action": 2,
+    "Sci-Fi": 3,
+    "Drama": 3,
+    "Animation": 2,
+    "Comedy": 2
+  },
+  "top_5_movies": [
+    {
+      "title": "The Dark Knight",
+      "genre": "Action",
+      "year": 2008,
+      "rating": 9.5,
+      "watched": "yes"
+    },
+    {
+      "title": "Parasite",
+      "genre": "Drama",
+      "year": 2019,
+      "rating": 9.3,
+      "watched": "yes"
+    },
+    {
+      "title": "Interstellar",
+      "genre": "Sci-Fi",
+      "year": 2014,
+      "rating": 9.0,
+      "watched": "yes"
+    },
+    {
+      "title": "Inception",
+      "genre": "Sci-Fi",
+      "year": 2010,
+      "rating": 8.8,
+      "watched": "yes"
+    },
+    {
+      "title": "Dune",
+      "genre": "Sci-Fi",
+      "year": 2021,
+      "rating": 8.5,
+      "watched": "no"
+    }
+  ]
+}
