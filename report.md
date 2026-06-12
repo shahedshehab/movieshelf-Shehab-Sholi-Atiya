@@ -64,17 +64,16 @@ test_movies = [
     {"title": "C", "rating": 7.0}
 ]
 print(sa.average_rating(test_movies))   # expected: 8.17
-​```
 
 3.  Test Case: top_rated Method
 - **Description:** Return top 3 highest rated movies
 - **Input:**
-```
 movies = [
     {"title": "Movie A", "rating": 7.5},
     {"title": "Movie B", "rating": 9.0},
     {"title": "Movie C", "rating": 8.2},
     {"title": "Movie D", "rating": 6.8}
+  
 ]
 n = 3
 **Expected Output:** Same as expected output
@@ -83,8 +82,8 @@ n = 3
     {"title": "Movie B", "rating": 9.0},
     {"title": "Movie C", "rating": 8.2},
     {"title": "Movie A", "rating": 7.5}
+
 ]
-```
 4. Test: genre_counts()
 - **Description:** Count number of movies per genre
 - **Input:**
