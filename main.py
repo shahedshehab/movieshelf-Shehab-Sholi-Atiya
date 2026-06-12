@@ -10,8 +10,9 @@ def main():
     mm= MovieManager()
     sa= StatsAnalyzer()
     viz= Visualizer()
+    
     # Step 1: Load movies
-    print("[1/4]loading movies.....")
+    print("[1/4]loading movies....")
     movies=mm.load_movies(DATA_FILE)
     print(f" Loaded{len(movies)} movies\n")
     # Step 2: Calculate statistics
@@ -29,7 +30,7 @@ def main():
     for i, m in enumerate(top_movies,1):
         print(f"    {i}. {m['title']:30s} {m['rating']}")
     #Step 3: Save report 
-    print("\n[3/4] Saving report.....")
+    print("\n[3/4] Saving report....")
     report ={
         "total_movies": len(movies),
         "average_rating":  avg_rating,
@@ -43,7 +44,7 @@ def main():
     print(f"   Report saved: {REPORT_FILE}")
     
     # Step 4: Visualize
-    print("[4/4] Displaying charts.....")
+    print("[4/4] Displaying charts....")
     viz.rating_histogram(movies)
     viz.genre_pie_chart(genre_counts)
     viz.top_movies_bar(top_movies)
