@@ -53,7 +53,7 @@ print(type(movies[0]["rating"]))    # expected: float
 2. Test: average_rating()
 **Input:** List of 3 movies with ratings 9.5, 8.0, 7.0
 **Expected Output:** 8.17
-**Actual Output:** 8.17 
+**Actual Output:** 8.17 ✅
 
 **Code snippet used to verify:**
 ​```python
@@ -64,27 +64,9 @@ test_movies = [
     {"title": "C", "rating": 7.0}
 ]
 print(sa.average_rating(test_movies))   # expected: 8.17
+​```
 
-3.  Test Case: top_rated Method
-- **Description:** Return top 3 highest rated movies
-- **Input:**
-movies = [
-    {"title": "Movie A", "rating": 7.5},
-    {"title": "Movie B", "rating": 9.0},
-    {"title": "Movie C", "rating": 8.2},
-    {"title": "Movie D", "rating": 6.8}
-  
-]
-n = 3
-**Expected Output:** Same as expected output
-**Actual Output:** 
-[
-    {"title": "Movie B", "rating": 9.0},
-    {"title": "Movie C", "rating": 8.2},
-    {"title": "Movie A", "rating": 7.5}
-
-]
-4. Test: genre_counts()
+3. Test: genre_counts()
 - **Description:** Count number of movies per genre
 - **Input:**
 ```python
@@ -96,26 +78,18 @@ movies = [
 **Expected Output:** {"Action": 2, "Drama": 1}
 **Actual Output:** {"Action": 2, "Drama": 1}
 
-5. Test Case: watched_summary Method
-- **Description:** Calculate watched vs unwatched summary
-- **Input:**
-```python
+**Code snippet used to verify:**
+​```python
+sa = StatsAnalyzer()
 movies = [
-    {"title": "Movie A", "watched": "yes"},
-    {"title": "Movie B", "watched": "no"},
-    {"title": "Movie C", "watched": "yes"}
+    {"title": "Movie A", "genre": "Action"},
+    {"title": "Movie B", "genre": "Action"},
+    {"title": "Movie C", "genre": "Drama"}
 ]
-```
-**Expected Output:** {
-    "total": 3,
-    "watched": 2,
-    "unwatched": 1,
-    "watched_%": 66.7
-}
-```
-**Actual Output:** Same as expected output
+print(sa.genre_counts(movies))  
+​```
 
-6. Test:Full main.py run
+4. Test:Full main.py run
 **Input:** movies.csv with 12 movies
 **Expected Output:** No errors, all 3 charts appear
 **Actual Output:** all 3 charts displayed successfully
