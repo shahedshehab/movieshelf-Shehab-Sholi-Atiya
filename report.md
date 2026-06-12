@@ -119,7 +119,7 @@ python main.py
 |---|---|---|---|---|
 | Shahed Shehab | 202211666 | movie_manager.py, create_sample_data.py | 5 | @shahedshehab |
 | Reem Sholi    | 202211538 | stats_analyzer.py, requirements.txt     | 18 | @reemsholi |
-| Aseel Atiya   | 202212011 | visualizer.py, main.py                  | 9 | @aseelatiya |
+| Aseel Atiya   | 202212011 | visualizer.py, main.py                  | 11 | @aseelatiya |
 
 
 # 8: Challenges & What You Learned
