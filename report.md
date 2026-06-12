@@ -68,12 +68,11 @@ print(sa.average_rating(test_movies))   # expected: 8.17
 
 3. Test: genre_counts()
 - **Description:** Count number of movies per genre
-- **Input:**
-```python
-movies = [
+- **Input:** movies = [
     {"title": "Movie A", "genre": "Action"},
     {"title": "Movie B", "genre": "Action"},
     {"title": "Movie C", "genre": "Drama"}
+  
 ]
 **Expected Output:** {"Action": 2, "Drama": 1}
 **Actual Output:** {"Action": 2, "Drama": 1}
