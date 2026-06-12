@@ -51,8 +51,22 @@ print(type(movies[0]["rating"]))    # expected: float
 ​```
 
 2. Test: average_rating()
-   **Expected Output:** 8.17 |
-   **Actual Output:** 8.17 (True) 
+  ### Test: average_rating()
+
+**Input:** List of 3 movies with ratings 9.5, 8.0, 7.0
+**Expected Output:** 8.17
+**Actual Output:** 8.17 ✅
+
+**Code snippet used to verify:**
+​```python
+sa = StatsAnalyzer()
+test_movies = [
+    {"title": "A", "rating": 9.5},
+    {"title": "B", "rating": 8.0},
+    {"title": "C", "rating": 7.0}
+]
+print(sa.average_rating(test_movies))   # expected: 8.17
+​```
 
 
 3. Test: genre_counts()
